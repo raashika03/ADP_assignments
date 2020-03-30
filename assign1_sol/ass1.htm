@@ -1,0 +1,143 @@
+<html>
+<head>
+    <title></title>
+
+    <link rel="stylesheet" type="text/css" href="ass1.css"> 
+
+    <style>
+    </style>
+
+
+</head>
+
+<body>
+	<button class = "dropdown_btn"> Home Page </button>
+	<div class = "dropdown">
+
+		<button class = "dropdown_btn"> Links </button>
+		<div class = "dropdown_content">
+			   <ul type="circle">
+				<a href = "https://www.google.com/"><li><span class= "con"> Google </span></li></a> 
+				<a href = "http://www.iitmandi.ac.in/"><li><span class= "con"> IIT Mandi </span></li></a>
+			   </ul>
+		</div>
+	</div>
+
+
+	<div class = "content">
+	
+	<h1> Assignment Number 1</h1>
+	<p> Welcome to CS 207 </p>
+
+
+	<div class = "myclass">
+	<form>
+		<span> 0 </span>
+		<input type="range" min="0" max="100" value="50" class="slider" id="myRange">
+		<span> 100 + </span>
+	</form>	  
+	</div>
+
+	<div class = "myclass">
+	<form id = "number" >
+		<input type="number" id="numb" value="0" />
+	</form>
+	</div>
+	<span> = </span> <span id = "demo"></span>
+
+	<script>
+		var slider = document.getElementById("myRange");
+		var output = document.getElementById("demo");
+		output.innerHTML = slider.value; // Display the default slider value
+
+	// Update the current slider value (each time you drag the slider handle)
+	var number = document.getElementById("numb")
+	slider.oninput = function() 
+	{
+		output.innerHTML = Number(slider.value)+Number(number.value);
+	} 
+
+	number.oninput = function() 
+	{
+		output.innerHTML = Number(slider.value) + Number(number.value);
+	}
+	</script>
+	
+	<br>
+	<a href="#bottom" style="color:blue"> Jump Link </a>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<table border="1 double purple">
+	<tr>
+	  <th>No.</th>
+	  <th>Name</th>
+	  <th>Email</th>
+	</tr>
+	   <td>1</td>
+	   <td>Clar Kent</td>
+	   <td>clarkent@mail.com</td>
+	<tr>
+	   <td>2</td>
+	   <td>Peter Parker</td>
+	   <td>peterparker@mail.com</td>
+	</tr>
+	   <td>3</td>
+	   <td>Bruce wayne</td>
+	   <td>brucewaynw@mail.com</td>
+	<tr>
+	   <td>4</td>
+	   <td>Tony Stark</td>
+	   <td>tonystark@mail.com</td>
+	</tr>
+	<tr>
+	   <td>5</td>
+	   <td>Bucky Barnes</td>
+	   <td>buckybarnes@mail.com</td>
+	</tr>
+	<tr>
+	   <td>6</td>
+	   <td>Reed Richards</td>
+	   <td>reedrichards@mail.com</td>
+	</tr>
+	<tr>
+	   <td>7</td>
+	   <td>J'onn J'onzz</td>
+	   <td>Jonnjonzz@mail.com</td>
+	</tr>
+	<tr>
+	   <td>8</td>
+	   <td>Sheira Sanders</td>
+	   <td>sheirasanders@mail.com</td>
+	</tr>
+
+	</table>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<audio controls>
+	<source src = "horse.ogg" type="audio/ogg">
+	</audio>
+	<br>
+	<br>
+	<hr style="border-style: dotted">
+	<p>
+	<span style="font-family:Courier;">
+	Made 19th August 2019<br>for CS-207.
+	</span>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<span id="bottom">END</span>
+	</p>
+	</div>
+	</body>
+</html>
